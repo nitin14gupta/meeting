@@ -3,7 +3,6 @@
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 import Navbar from '@/components/Navbar';
-import Scene3D from '@/components/Scene3D';
 import FeaturesSection from '@/components/FeaturesSection';
 import Footer from '@/components/Footer';
 
@@ -12,17 +11,12 @@ export default function Home() {
     <div className="min-h-screen bg-gradient-to-br from-gray-900 via-black to-gray-900 text-white overflow-x-hidden">
       {/* Navbar */}
       <Navbar />
-      
+
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center pt-16">
         {/* Background gradient */}
         <div className="absolute inset-0 bg-gradient-to-br from-blue-900/20 via-purple-900/20 to-transparent" />
-        
-        {/* 3D Scene */}
-        <div className="absolute inset-0 z-0">
-          <Scene3D />
-        </div>
-        
+
         {/* Hero Content */}
         <div className="relative z-10 text-center px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
           <motion.div
@@ -41,7 +35,7 @@ export default function Home() {
               </span>
             </h1>
           </motion.div>
-          
+
           <motion.p
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
@@ -54,7 +48,7 @@ export default function Home() {
               Transform your meetings with AI-powered voice recognition and intelligent summarization.
             </span>
           </motion.p>
-          
+
           {/* CTA Buttons */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -73,7 +67,7 @@ export default function Home() {
                 🎙️ Start Meeting
               </Link>
             </motion.div>
-            
+
             <motion.div
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
@@ -87,7 +81,7 @@ export default function Home() {
             </motion.div>
           </motion.div>
         </div>
-        
+
         {/* Scroll indicator */}
         <motion.div
           initial={{ opacity: 0 }}
@@ -108,10 +102,10 @@ export default function Home() {
           </motion.div>
         </motion.div>
       </section>
-      
+
       {/* Features Section */}
       <FeaturesSection />
-      
+
       {/* Footer */}
       <Footer />
     </div>
