@@ -166,6 +166,20 @@ Generated on: ${new Date().toLocaleString()}
                                     Generate MOM
                                 </motion.button>
 
+                                <motion.button
+                                    whileHover={{ scale: 1.05 }}
+                                    whileTap={{ scale: 0.95 }}
+                                    onClick={handleGenerateQuickSummary}
+                                    disabled={isGeneratingSummary}
+                                    className="bg-gradient-to-r from-green-500 to-teal-600 hover:from-green-600 hover:to-teal-700 disabled:from-gray-500 disabled:to-gray-600 text-white px-4 py-3 rounded-full shadow-lg transition-all duration-300 flex items-center gap-2"
+                                >
+                                    {isGeneratingSummary ? (
+                                        <Loader2 className="w-4 h-4 animate-spin" />
+                                    ) : (
+                                        <FileText className="w-4 h-4" />
+                                    )}
+                                    Quick Summary
+                                </motion.button>
                             </div>
                         )}
                     </div>
@@ -362,6 +376,20 @@ Generated on: ${new Date().toLocaleString()}
                                 </ul>
                             </div>
 
+                            {/* Participants */}
+                            <div>
+                                <h3 className="text-lg font-semibold text-blue-300 mb-2">Participants</h3>
+                                <div className="flex flex-wrap gap-2">
+                                    {meetingSummary.participants.map((participant, index) => (
+                                        <span
+                                            key={index}
+                                            className="bg-blue-900/30 text-blue-200 px-3 py-1 rounded-full text-sm"
+                                        >
+                                            {participant}
+                                        </span>
+                                    ))}
+                                </div>
+                            </div>
                         </div>
                     </motion.div>
                 )}
