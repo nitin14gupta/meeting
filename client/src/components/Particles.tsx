@@ -60,12 +60,14 @@ export default function Particles({ count = 200, radius = 5 }: ParticlesProps) {
                     count={particles.positions.length / 3}
                     array={particles.positions}
                     itemSize={3}
+                    args={[new Float32Array(particles.positions.length / 3), 3]}
                 />
                 <bufferAttribute
                     attach="attributes-color"
                     count={particles.colors.length / 3}
                     array={particles.colors}
                     itemSize={3}
+                    args={[new Float32Array(particles.colors.length / 3), 3]}
                 />
             </bufferGeometry>
             <pointsMaterial
