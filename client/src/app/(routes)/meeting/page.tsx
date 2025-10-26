@@ -107,11 +107,8 @@ Generated on: ${new Date().toLocaleString()}
     return (
         <div className="min-h-screen bg-gradient-to-br from-gray-900 via-black to-gray-900 text-white">
             {/* Header */}
-            <div className="p-6 border-b border-gray-800 flex items-center gap-4">
-                <Image src="/Login_Head_OrgIcon.svg" alt="MOMify Meeting" width={60} height={60} />
-                <h1 className="text-3xl font-bold text-center bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
-                    MOMify Meeting
-                </h1>
+            <div className="p-6 border-b border-gray-800 flex items-center justify-center">
+                <Image src="/Login_Head_OrgIcon.svg" alt="MOMify Meeting" width={100} height={100} />
             </div>
 
             <div className="container mx-auto px-6 py-8 max-w-4xl">

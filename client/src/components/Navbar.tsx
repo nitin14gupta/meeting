@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Navbar() {
     return (
@@ -18,9 +19,7 @@ export default function Navbar() {
                         whileHover={{ scale: 1.05 }}
                         className="flex-shrink-0"
                     >
-                        <Link href="/" className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
-                            MOMify
-                        </Link>
+                        <Image src="/Login_Head_OrgIcon.svg" alt="MOMify" width={60} height={60} />
                     </motion.div>
 
                     {/* Navigation Links */}
