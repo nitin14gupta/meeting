@@ -13,10 +13,10 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "MOMify - AI-Powered Meeting Notes",
+  title: "AI-Powered Meeting Notes",
   description: "Turn your conversations into smart meeting notes with AI-powered transcription and summarization. Record, transcribe, and summarize in real-time.",
   keywords: "meeting notes, AI transcription, voice recognition, meeting summary, MOM, minutes of meeting",
-  authors: [{ name: "MOMify Team" }],
+  authors: [{ name: "Nitin Gupta" }],
   viewport: "width=device-width, initial-scale=1",
 };
 

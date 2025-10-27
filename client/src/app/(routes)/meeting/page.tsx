@@ -108,7 +108,7 @@ Generated on: ${new Date().toLocaleString()}
         <div className="min-h-screen bg-gradient-to-br from-gray-900 via-black to-gray-900 text-white">
             {/* Header */}
             <div className="p-6 border-b border-gray-800 flex items-center justify-center">
-                <Image src="/Login_Head_OrgIcon.svg" alt="MOMify Meeting" width={100} height={100} />
+                <Image src="/logo.png" alt="MOMify Meeting" width={100} height={100} />
             </div>
 
             <div className="container mx-auto px-6 py-8 max-w-4xl">
@@ -163,21 +163,6 @@ Generated on: ${new Date().toLocaleString()}
                                         <FileText className="w-4 h-4" />
                                     )}
                                     Generate MOM
-                                </motion.button>
-
-                                <motion.button
-                                    whileHover={{ scale: 1.05 }}
-                                    whileTap={{ scale: 0.95 }}
-                                    onClick={handleGenerateQuickSummary}
-                                    disabled={isGeneratingSummary}
-                                    className="bg-gradient-to-r from-green-500 to-teal-600 hover:from-green-600 hover:to-teal-700 disabled:from-gray-500 disabled:to-gray-600 text-white px-4 py-3 rounded-full shadow-lg transition-all duration-300 flex items-center gap-2"
-                                >
-                                    {isGeneratingSummary ? (
-                                        <Loader2 className="w-4 h-4 animate-spin" />
-                                    ) : (
-                                        <FileText className="w-4 h-4" />
-                                    )}
-                                    Quick Summary
                                 </motion.button>
                             </div>
                         )}

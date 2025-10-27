@@ -19,7 +19,7 @@ export default function Navbar() {
                         whileHover={{ scale: 1.05 }}
                         className="flex-shrink-0"
                     >
-                        <Image src="/Login_Head_OrgIcon.svg" alt="MOMify" width={60} height={60} />
+                        <Image src="/logo.png" alt="MOMify" width={60} height={60} />
                     </motion.div>
 
                     {/* Navigation Links */}
